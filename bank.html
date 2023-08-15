@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <!--! TailwindCss link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--! header section start  -->
+    <header><h1 class="text-5xl my-6 text-center">Let's get some <span class="font-semibold text-violet-600">mooney !!!</span></h1>
+    </header>
+    <!--! Dashboard  -->
+     <main>
+        <!-- ! Bank Dashboard section  -->
+        <section class="my-20">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-green-400 mx-auto w-8/12 rounded-lg p-10 drop-shadow-2xl">
+                    <h2 class="text-4xl font-semibold mb-4">Deposit</h2>
+                    <h3 class="text-5xl font-bold">$<span id="deposit-total">00</span></h3>
+                </div>
+                <div class="bg-pink-400 mx-auto w-8/12 rounded-lg p-10 drop-shadow-2xl">
+                    <h2 class="text-4xl font-semibold mb-4">Withdraw</h2>
+                    <h3 class="text-5xl font-bold" >$<span id="withdraw-total">00</span></h3>
+                </div>
+                <div class="bg-orange-400 mx-auto w-8/12 rounded-lg p-10 drop-shadow-2xl">
+                    <h2 class="text-4xl font-semibold mb-4">Balance</h2>
+                    <h3 class="text-5xl font-bold" >$<span id="balance-total">1235</span></h3>
+                </div>
+                
+            </div> 
+        </section>
+        <!-- ! Bank Dashboard input field section  -->
+        <section class="my-32">
+            <div class="grid grid-cols-2 gap-4 text-white">
+                <!-- ! deposit CARD -->
+                <div class=" bg-[#253D76] mx-auto w-7/12 rounded-lg p-10 drop-shadow-2xl">
+                    <h2 class="text-4xl font-semibold mb-4">Please Deposit</h2>
+                    <div class="mt-7 ml-20">
+                        <!--! user-deposit-input -->
+                        <input class="py-2 px-8 rounded outline-0 w-9/12 text-black" required type="number" name="" id="user-deposit-input" placeholder="Deposit">
+                        <br>
+                        <!-- ! deposit button -->
+                        <button  class="mt-7 bg-[#8C7CD7] py-2 px-4  w-6/12 rounded text-white font-semibold hover:bg-sky-700" type="submit" id="btn-deposit">Deposit</button>
+                    </div>
+                </div>
+                <!-- ! withdraw-CARD -->
+                <div class="bg-[#8C7CD7] mx-auto w-7/12 rounded-lg p-10 drop-shadow-2xl">
+                    <h2 class="text-4xl font-semibold mb-4">Please Withdraw</h2>
+                    <!-- ! user-withdraw-input -->
+                    <div class="mt-7 ml-20">
+                        <input class="py-2 px-8 rounded outline-0 w-9/12 text-black" required type="number" name="" id="user-withdraw-input" placeholder="Withdraw">
+                        <br>
+                        <!-- ! withdraw button -->
+                        <button  class="mt-7 bg-[#253D76] py-2 px-4  w-6/12 rounded text-white font-semibold hover:bg-sky-700" type="submit" id="btn-withdraw">Withdraw</button>
+                    </div>
+                </div>
+            </div> 
+        </section>
+     </main>
+     <script src="js/dashboard.js"></script>
+</body>
+</html>
